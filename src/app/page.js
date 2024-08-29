@@ -5,7 +5,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const page = () => {
   const [text, setText] = useState();
-  const [select, useSelect] = useState();
+  const [select, useSelect] = useState('none');
 
   const notify = () =>
     toast("copied", {
