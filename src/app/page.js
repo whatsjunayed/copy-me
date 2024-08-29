@@ -19,6 +19,7 @@ const page = () => {
   };
   return (
     <div className="flex gap-8 flex-col items-center justify-center h-screen w-full bg-black text-white relative">
+      <div className="text-3xl absolute top-[10%]">Copy Something?</div>
       <div className="absolute bottom-[5%] w-auto  grid grid-cols-2 text-center gap-10">
         <span
           className={select === "none" && "bg-orange-500 opacity-100"}
@@ -48,8 +49,8 @@ const page = () => {
       <div className="w-[80%] lg:w-[35%]">
         <input
           type="text"
-          className={`border-b-2 outline-none bg-transparent border-b-white w-full px-2 h-12 rounded-xl ${select}`}
-          placeholder="type something.."
+          className={`border-b-2 outline-none bg-transparent border-b-white w-full px-3 h-12 rounded-xl ${select}`}
+          placeholder="Type here...."
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
